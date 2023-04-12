@@ -131,13 +131,6 @@ a .bouton-cv
     
 
 }
-.photo img 
-{
-  
-    width: 400px;
-    height: 600px;
-    border: 2px;
-}
 
 
  #section-profil h1 
@@ -198,7 +191,7 @@ main
 }
 #section-formation
 {
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 
@@ -241,7 +234,7 @@ main
 
 #section-apropos 
 {
-    margin-top: 100px;
+    margin-top: 200px;
     width: 100%;
     height: 400px;
     padding-top: 50px;
@@ -325,7 +318,8 @@ main
 footer
 {
     background-color: #242427f3;
-    height: 150px;
+    height: 200px;
+    width: 100%;
    
 }
 footer p
@@ -368,15 +362,7 @@ footer p
 {
     width:200px;
 }
-.container-ref
-{
-    max-width:800px;
-    height: 200px;
-    margin:0 auto;
-    padding:20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px ;
-}
+
 .container-ref h3
 {
     margin-bottom:10px; 
@@ -408,51 +394,7 @@ footer p
 {
     padding-top: 100px;
 }
-.stage1 
-{
-    background-color: rgb(178, 189, 191);
-    width: 250px;
-    color: rgb(46, 49, 49);
-    padding: 8px;
-    text-align: left;
-    border-radius: 10px;
-    height: 200px;
-    font-size: 20px;
-}
-.stage1:hover
-{
-    transform: scale(1.1);
-    color: WHITE; 
-}
-.stage
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:0 auto;
-    padding:20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px ;
-    height: 250px;
 
-}
-
-.stage2
-{
-    background-color:  rgb(178, 189, 191);
-    width: 250px;
-    color: rgb(46, 49, 49);
-    padding: 8px;
-    text-align: left;
-    border-radius: 10px;
-    height: 200px;
-    font-size: 20px;
-}
-.stage2:hover
-{
-    transform: scale(1.1);
-    color: white; 
-}
 
 .interets
 {
@@ -532,7 +474,7 @@ h3{
 
   
   /* Styles pour les écrans étroits */
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     /* Ajoutez vos styles pour les écrans étroits ici */
     .link {
       display: none;
@@ -548,16 +490,60 @@ h3{
         max-width: 70%;
         height: auto;
     }
-    .grid {
-        display: flex;
-        grid-template-columns: repeat(2.1);
-        gap: 20px;
-    }
-    .container-ref{
-        width: 200px;
-
-    }
+    
+   
   }
+  @media screen and (max-width:768px) {
+    .grid{
+    display: block;
+    grid-template-columns: repeat(2,1fr);
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    gap: 30em;
+}
+
+
+}
+#section-formation{
+    
+ 
+    padding-top:48em;
+}@media screen and (max-width:768px){
+    .container-ref h3
+{
+    margin-bottom:10px; 
+}
+
+#section-contact{
+    width: 50%;
+}
+
+.container-ref img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.copy{
+    width: 100%;
+}
+
+}
+@media screen and (max-width:240px) {
+    #section-formation{
+        display: block;
+        flex-wrap: wrap;
+    }
+    h1{
+        padding-top: 100px;
+    }
+    
+}
+
+    
+  
  
   
   
