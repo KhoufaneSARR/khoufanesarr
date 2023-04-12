@@ -8,7 +8,7 @@ body
 {
     margin: 0 auto;
     padding: 0;
-    background-color: #dfdee7;
+    background-color: white;
 
 }
 html
@@ -31,6 +31,7 @@ nav
     height: 90px;
     position: fixed;
     width: 100%;
+    padding: 0%;
 }
 nav #icon
 {    
@@ -52,52 +53,7 @@ h1
    font-size: 20px;
     width: 80px; 
 }
-@media(max-width:1300px){
-.logo img 
-{
-   font-size: 20px;
-    width: 80px; 
-}
-nav ul{
-    margin-right: 20px;
-}
-nav a{
-    font-size: 17px;
-}
-}
-@media (max-width:900px){
-    nav #icon{
-        display:block;
 
-    }
-    nav ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: transparent;
-        top:80px;
-        left:-100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav li{
-        display:block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav a{
-        font-size: 20px;
-    }
-    a.active,a:hover{
-        border:none;
-        color:aqua;
-    }
-    nav ul.show{
-        left: 0;
-
-    }
-
-}
 
 .link ul 
 {
@@ -124,12 +80,12 @@ ul li a:hover
     color:rgb(107, 210, 220);
     border: 1px solid rgb(238, 236, 228);
 }
-a.active
+a.active a:hover
 {
-    transition: 2s;
+    transition: 5s;
     color:rgb(241, 230, 230);
-    border: 1px ; 
-    border-radius: 1px;
+    border: 1px solid; 
+    border-radius: 2px;
 }
 
  a .bouton-competence
@@ -183,13 +139,7 @@ a .bouton-cv
     border: 2px;
 }
 
-#section-profil 
-{
-    border-radius: 20px;
-    background-color: rgb(178, 189, 191);
-    width: 100%;
-    box-shadow: 5px 5px 15px #03002b;
-}
+
  #section-profil h1 
 {
     text-align: left;
@@ -250,73 +200,7 @@ main
 {
     padding-top: 200px;
 }
-.formation1 
-{
-    background-color: rgb(178, 189, 191);
-    width: 250px;
-    color: rgb(46, 49, 49);
-    padding: 8px;
-    text-align: left;
-    border-radius: 10px;
-    height: 200px;
-    font-size: 20px;
-  
-}
-.formation1 :hover
-{
-    transform: scale(1.1);
-    color: #24b5ee;
-}
-.formation2
-{
-    background-color: rgb(178, 189, 191);
-    width: 250px;
-    color: rgb(46, 49, 49);
-    padding: 8px;
-    text-align: left;
-    border-radius: 10px;
-    height: 200px;
-    font-size: 20px;
-}
-.formation2 :hover
-{
-    transform: scale(1.1);
-    color: #24b5ee;
-}
-.formation3
-{
-    background-color: rgb(178, 189, 191);
-    width: 250px;
-    color: rgb(46, 49, 49);
-    font-size: 20px;
-    padding: 8px;
-    text-align: left;
-    border-radius: 10px;
-    height: 200px;
-}
-.formation3:hover
-{
-    transform: scale(1.1);
-    color: #24b5ee;
-}
 
-.formation
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:0 auto;
-    padding:20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px ;
-    height: 250px;
-      
-}
-.formation :hover
-{
-    transform: scale(1.1);
-    color: #24b5ee;
-}
 
 .fa-facebook
 {
@@ -377,7 +261,7 @@ main
    font-size: 15px; 
    font-family: 'Open Sans', sans-serif;
    font-weight: 300px;
-   color: #5d676c;
+   color: #111415;
 }
 
 
@@ -479,19 +363,6 @@ footer p
 {
     font-size: 10px;
 }
-/*responsive*/
-
-@media screen and (max-width:1200px){
-    .box{
-        width: 40%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .box{
-        width: 90%;
-    }
-}
 
 #references img 
 {
@@ -551,7 +422,7 @@ footer p
 .stage1:hover
 {
     transform: scale(1.1);
-    color: #24b5ee; 
+    color: WHITE; 
 }
 .stage
 {
@@ -580,8 +451,9 @@ footer p
 .stage2:hover
 {
     transform: scale(1.1);
-    color: #24b5ee; 
+    color: white; 
 }
+
 .interets
 {
     background-color: rgb(178, 189, 191);
@@ -596,7 +468,7 @@ footer p
 .interets:hover
 {
     transform: scale(1.1);
-    color: #24b5ee; 
+    color: WHITE; 
 }
 .h
 {
@@ -631,3 +503,65 @@ h3{
     text-align: center;
     font-size: 10px;
 }
+.grid > div {
+    background-color: rgb(178, 189, 191);
+    border: solid 2px transparent;
+    border-radius:10px ;
+    width: 210px;
+    height: 200px;
+    font-family: 'Rowdies', cursive;
+    box-shadow: 5px 5px 15px ;;
+    
+}
+.grid > div :hover{
+   color: white;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 60px;
+    padding: 20px;
+
+    
+}
+.grid-items:hover{
+      transform: scale(1.1);
+}
+
+
+  
+  /* Styles pour les écrans étroits */
+  @media (max-width: 768px) {
+    /* Ajoutez vos styles pour les écrans étroits ici */
+    .link {
+      display: none;
+    }
+    .logo img {
+      max-width: 50%;
+      height: auto;
+    }
+    .texte h1 {
+      font-size: 10px;
+    }
+    .photo img {
+        max-width: 70%;
+        height: auto;
+    }
+    .grid {
+        display: flex;
+        grid-template-columns: repeat(2.1);
+        gap: 20px;
+    }
+    .container-ref{
+        width: 200px;
+
+    }
+  }
+ 
+  
+  
+
+
+
+ 
